@@ -61,6 +61,7 @@
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(129, 23);
             txtNombre.TabIndex = 3;
+            txtNombre.TextChanged += txtNombre_TextChanged;
             // 
             // lblNombre
             // 
@@ -163,7 +164,6 @@
             lblTurno.Size = new Size(39, 15);
             lblTurno.TabIndex = 3;
             lblTurno.Text = "Turno";
-            lblTurno.Click += lblTurno_Click;
             // 
             // lblPlan
             // 
@@ -173,7 +173,6 @@
             lblPlan.Size = new Size(30, 15);
             lblPlan.TabIndex = 2;
             lblPlan.Text = "Plan";
-            lblPlan.Click += lblPlan_Click;
             // 
             // cboPlan
             // 
@@ -226,6 +225,7 @@
             cboCuotas.Name = "cboCuotas";
             cboCuotas.Size = new Size(48, 23);
             cboCuotas.TabIndex = 2;
+            cboCuotas.SelectedIndexChanged += cboCuotas_SelectedIndexChanged;
             // 
             // rbtTarjeta
             // 
@@ -237,6 +237,7 @@
             rbtTarjeta.TabStop = true;
             rbtTarjeta.Text = "Tarjeta";
             rbtTarjeta.UseVisualStyleBackColor = true;
+            rbtTarjeta.CheckedChanged += rbtTarjeta_CheckedChanged;
             // 
             // rbtEfectivo
             // 
